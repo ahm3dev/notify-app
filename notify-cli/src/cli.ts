@@ -1,5 +1,6 @@
 #!/usr/bin/env bun
 import { Command, Option } from "commander";
+import pkg from "../package.json";
 import { ApiClient } from "./api";
 import { resolveApiUrl } from "./config";
 
@@ -8,6 +9,7 @@ const program = new Command();
 program
   .name("notify")
   .description("CLI client for the notify backend")
+  .version(pkg.version, "-v, --version", "output the version")
   .option(
     "--api-url <url>",
     "backend base URL (defaults to $NOTIFY_API_URL or http://localhost:4000)",

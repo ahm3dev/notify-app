@@ -1,5 +1,6 @@
 {
   "name": "notify-cli",
+  "version": "0.1.0",
   "module": "src/cli.ts",
   "type": "module",
   "private": true,
