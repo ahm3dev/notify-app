@@ -5,9 +5,13 @@
   "description": "Encore Typescript Starter",
   "license": "MPL-2.0",
   "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
   "devDependencies": {
     "@types/node": "^20.5.7",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^4.1.6"
   },
   "dependencies": {
     "encore.dev": "^1.57.4"
