@@ -1,0 +1,16 @@
+{
+  "name": "notify-cli",
+  "module": "src/cli.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run src/cli.ts",
+    "build": "bun build --compile ./src/cli.ts --outfile notify"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
